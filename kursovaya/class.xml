@@ -1,0 +1,314 @@
+<mxfile host="app.diagrams.net" agent="5.0">
+  <diagram name="Диаграмма классов предметной области" id="class-diagram">
+    <mxGraphModel dx="2419" dy="1419" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="class-listener" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" value="Слушатель" vertex="1">
+          <mxGeometry height="55" width="200" x="100" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="class-track" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" value="Трек" vertex="1">
+          <mxGeometry height="55" width="220" x="640" y="-55" as="geometry" />
+        </mxCell>
+        <mxCell id="class-album" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=13;" value="Альбом" vertex="1">
+          <mxGeometry height="55" width="200" x="270" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="class-artist" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;" value="Исполнитель" vertex="1">
+          <mxGeometry height="55" width="200" x="790" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="class-author" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" value="Автор" vertex="1">
+          <mxGeometry height="55" width="200" x="900" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="class-label" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" value="Лейбл" vertex="1">
+          <mxGeometry height="55" width="200" x="280" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="class-playlist" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" value="Сборник (плейлист)" vertex="1">
+          <mxGeometry height="55" width="200" x="-180" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="class-listen" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=13;" value="Прослушивание" vertex="1">
+          <mxGeometry height="55" width="200" x="310" y="-55" as="geometry" />
+        </mxCell>
+        <mxCell id="class-rating" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;" value="Оценка" vertex="1">
+          <mxGeometry height="55" width="200" x="640" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="class-subscription" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" value="Подписка на исполнителя" vertex="1">
+          <mxGeometry height="55" width="200" x="330" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="link-listener-playlist" edge="1" parent="1" source="class-listener" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;" target="class-playlist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-2" connectable="0" parent="link-listener-playlist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="составляет" vertex="1">
+          <mxGeometry relative="1" x="-0.3154" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-14" connectable="0" parent="link-listener-playlist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8999" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-33" connectable="0" parent="link-listener-playlist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="0.9142" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-listener-listen" edge="1" parent="1" source="class-listener" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;" target="class-listen">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-4" connectable="0" parent="link-listener-listen" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="совершает" vertex="1">
+          <mxGeometry relative="1" x="-0.5369" y="-3" as="geometry">
+            <mxPoint x="33" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-18" connectable="0" parent="link-listener-listen" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8199" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-19" connectable="0" parent="link-listener-listen" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="0.774" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-listener-rating" edge="1" parent="1" source="class-listener" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;" target="class-rating">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="650" />
+              <mxPoint x="740" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-3" connectable="0" parent="link-listener-rating" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="выражает" vertex="1">
+          <mxGeometry relative="1" x="0.3631" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-17" connectable="0" parent="link-listener-rating" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="0.9525" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-20" connectable="0" parent="link-listener-rating" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9868" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-listener-subscription" edge="1" parent="1" source="class-listener" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="class-subscription">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="148" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-5" connectable="0" parent="link-listener-subscription" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="подписан на" vertex="1">
+          <mxGeometry relative="1" x="-0.0042" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-21" connectable="0" parent="link-listener-subscription" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.9134" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-22" connectable="0" parent="link-listener-subscription" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="M" vertex="1">
+          <mxGeometry relative="1" x="0.8041" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-subscription-artist" edge="1" parent="1" source="class-subscription" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;" target="class-artist" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-42" connectable="0" parent="link-subscription-artist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9209" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-43" connectable="0" parent="link-subscription-artist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.9283" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-track-album" edge="1" parent="1" source="class-track" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="class-album">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="695" y="65" />
+              <mxPoint x="580" y="65" />
+              <mxPoint x="580" y="270" />
+              <mxPoint x="380" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-6" connectable="0" parent="link-track-album" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;входит в&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.5222" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-23" connectable="0" parent="link-track-album" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9714" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-24" connectable="0" parent="link-track-album" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="0.9406" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-track-author" edge="1" parent="1" source="class-track" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="class-author">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="-27" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-7" connectable="0" parent="link-track-author" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="имеет автора" vertex="1">
+          <mxGeometry relative="1" x="-0.4017" as="geometry">
+            <mxPoint x="44" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-25" connectable="0" parent="link-track-author" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.9019" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-26" connectable="0" parent="link-track-author" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="M" vertex="1">
+          <mxGeometry relative="1" x="0.7624" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-track-artist" edge="1" parent="1" source="class-track" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;dashed=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="class-artist">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="200" />
+              <mxPoint x="840" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-8" connectable="0" parent="link-track-artist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;исполняется&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.168" y="2" as="geometry">
+            <mxPoint x="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-27" connectable="0" parent="link-track-artist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.9209" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-28" connectable="0" parent="link-track-artist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="M" vertex="1">
+          <mxGeometry relative="1" x="0.9162" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-album-artist" edge="1" parent="1" source="class-album" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;dashed=1;" target="class-artist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-10" connectable="0" parent="link-album-artist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="выпущен" vertex="1">
+          <mxGeometry relative="1" x="-0.2357" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-29" connectable="0" parent="link-album-artist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.9614" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-30" connectable="0" parent="link-album-artist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="M" vertex="1">
+          <mxGeometry relative="1" x="0.9294" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-album-label" edge="1" parent="1" source="class-album" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="class-label">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-9" connectable="0" parent="link-album-label" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="выпущен" vertex="1">
+          <mxGeometry relative="1" x="-0.0145" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-31" connectable="0" parent="link-album-label" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.8392" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-32" connectable="0" parent="link-album-label" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7527" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-playlist-track" edge="1" parent="1" source="class-playlist" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="class-track">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="328" />
+              <mxPoint x="60" y="200" />
+              <mxPoint x="750" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-11" connectable="0" parent="link-playlist-track" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;содержит&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6458" y="-1" as="geometry">
+            <mxPoint x="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-34" connectable="0" parent="link-playlist-track" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.962" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-35" connectable="0" parent="link-playlist-track" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="M" vertex="1">
+          <mxGeometry relative="1" x="0.9752" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-listen-track" edge="1" parent="1" source="class-listen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="class-track" value=" ">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="-30" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-12" connectable="0" parent="link-listen-track" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="относится к" vertex="1">
+          <mxGeometry relative="1" x="-0.3698" y="2" as="geometry">
+            <mxPoint x="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-36" connectable="0" parent="link-listen-track" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.8685" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-37" connectable="0" parent="link-listen-track" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7601" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-rating-track" edge="1" parent="1" source="class-rating" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=1;" target="class-track" value=" ">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="480" />
+              <mxPoint x="610" y="180" />
+              <mxPoint x="720" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-13" connectable="0" parent="link-rating-track" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="относится к" vertex="1">
+          <mxGeometry relative="1" x="-0.3048" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-38" connectable="0" parent="link-rating-track" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.9383" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNoR-woy6L2AxjWjj00S-39" connectable="0" parent="link-rating-track" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9541" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
